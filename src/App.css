@@ -52,9 +52,8 @@ p {
 #author {
   display: block;
   text-align: right;
-  margin: 20px 0 40px 0;
+  margin: 20px 30px 40px 0;
   font-size: 24px;
-  margin-right: 30px;
   color: var(--content-color);
 }
 
@@ -141,6 +140,7 @@ p {
 
   #author {
     font-size: 14px;
+    margin: 10px 10px 20px 0;
   }
 
   .buttonWrap {

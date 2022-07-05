@@ -4,8 +4,8 @@
 }
 
 .App {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   text-align: center;
   background: linear-gradient(135deg, rgb(175, 175, 175, 0.1), rgb(255, 255, 255, 0.1)), url(./img/random-quote-machine-background.jpg);
   background-position: center;
@@ -63,43 +63,60 @@ p {
   margin-right: 10px;
 }
 
-.socialIcon {
-  width: auto;
+.buttonWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 40px 40px;
+  grid-column-gap: 10px;
   height: 40px;
+  justify-content: center;
+}
+
+.socialIcon {
+  height: 30px;
   fill: var(--content-color);
+  position: relative;
+  top: 10%;
 }
 
-.socialIcon:hover {
-  fill: var(--hover-color);
+.socialLink {
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--content-color);
+  border-radius: 5px;
 }
 
-.social a:nth-of-type(1) {
-  margin-right: 20px;
+.socialLink:hover {
+  box-shadow: 0px 0px 10px #222222;
+}
+
+#tweet-quote {
+  text-decoration: none;
 }
 
 #new-quote {
   width: auto;
   height: 40px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0);
-  color: var(--content-color);
-  border: 2px solid var(--content-color);
+  background-color: var(--content-color);
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
+  font-style: italic;
   font-size: 20px;
   padding: 0 20px;
+  mix-blend-mode: screen;
+  color: #000;
 }
 
-#new-quote:hover {
-  border: 2px solid var(--hover-color);
-  color: var(--hover-color);
-}
-
-.buttonWrap {
-  display: flex;
-  justify-content: space-between;
+.hovDiv:hover {
+  box-shadow: 0px 0px 10px #222222;
 }
 
 @media screen and (max-width: 1400px) {
